@@ -1,11 +1,6 @@
 
-.work-container .sec-1 .main-img svg{
-	max-width: 300px;
-	align-self: center;
-	justify-self: center;
-	margin: auto;
-	margin-top: 75px;
-
+.work-container .sec1 .main-img{
+	margin-top: 10%;
 }
 
 svg #foot_1_{

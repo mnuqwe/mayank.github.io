@@ -1,21 +1,9 @@
-/**
- * demo1.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- *
- * Copyright 2017, Codrops
- * http://www.codrops.com
- */
-/* bike coming to center adjustment */
 
-/* start at page load */
-const entranceAnimationDuration = 1.5;//def(2) duration in seconds for the bike to get to the page center
+const entranceAnimationDuration = 1.4;//def(2) duration in seconds for the bike to get to the page center
 exitAnimationDuration = 0.7;//def(2) duration in seconds for the bike to get out of the page center
 exitAnimationDelay = 0.5;//def(1) delay before the bike start leaving screen when timelineExit.play() is called
 exitFrontWheelAnimationDelay = exitAnimationDelay;//def(exitAnimationDelay) Delay before front wheel start rotating
-wheelRotationSpeed = 0.5;//def(1) time for a full wheel rotation in seconds
+wheelRotationSpeed = .5;//def(1) time for a full wheel rotation in seconds
 exitWheelRotationSpeed = 0.5;//def(0.5) time for a full wheel rotation in seconds during exit
 strokeAnimationSpeed = 0.5;//def(2) delay in second for a stroke to go from 0 40% of his lenth to 60% 100%
 fillAnimationSpeed = 2;//def(2) delay in second for the fill property to go from opacity 1 to 0 ( not really opacity but that's the effect we see )
@@ -23,7 +11,7 @@ fillAnimationDelay = 0.5;//def(0.5) delay in second before the fill start to fil
 /* note that only half of the path fill get animated ("#mainpaths path:nth-child(odd)"), other half is always transparent */
 
 /* when entranceAnimationDuration is over , the bike "landed" at page center and we start the shaking with timelineShacking.play(); */
-delayBeforeAnimationSlow = 2000;//def(2000) delay in ms before we kill the main animation and we freeze / fill everything
+delayBeforeAnimationSlow = 10000;//def(2000) delay in ms before we kill the main animation and we freeze / fill everything
 
 /* after delayBeforeAnimationSlow is over we stop the main animation with timelineMainAnimation.kill(); and we start the last timelines */
 // timelineToFullStrokes.play() the
@@ -118,10 +106,10 @@ function startAnimation(currentdemo) {
         timelineMainFillAnimation.play(9245);
         timelineWheels.play(0);
         timelineWheels.timeScale(1);
-        timelineEntrance.play(0);
+        timelineEntrance.play();
         timelineEntrance.timeScale(1);
     });
-}
+} // do somethng here to paly pause the animation
 
 function endAnimation(callback) {
     timelineMainAnimation.pause();
@@ -226,4 +214,5 @@ class Slideshow {
     }
 };
 
-new Slideshow(document.querySelector('.bike-nav'));
+
+// startAnimation('bike-1');

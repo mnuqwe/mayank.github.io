@@ -3,49 +3,59 @@
 <head>
 	<title>Mayank Upadhyay</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/bike.css" />
 	<link rel="stylesheet" type="text/css" href="css/color.css" />
 	<link rel="stylesheet" type="text/css" href="css/workSvg.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+
+
 
 </head>
 <body>
 	<div class="main">
 
 		<!-- background -->
-		<!-- <img class="feather-img" src="img/background/3.png"/> -->
+		<img class="feather-img" src="img/background/3.png"/>
 		<!-- home page -->
-		<div class="nav-bar">
-				
+
+
+			<div class="nav-bar">	
 			<a href="#Home">Home</a>
 			<a href="#About">About</a>
 			<a href="#Work">Work</a>
 			<a href="#Skills">Skills</a>
 			<a href="#Gallery">Gallery</a>
-			<a href="#Contacts">Contacts</a>
-				
-		</div>
-		<div class="home" id="Home">
-			<div class="svg-back">
-				<img src="img/svg/back.svg"/>
+			<a href="#Contacts">Contacts</a>	
 			</div>
-			<div class="mu-content">
-				<h1>Hello,</h1>
-				<h2>I'M Mayank Upadhyay</h2>
-				<p>A UI/UX designer |</p>
-				<a href="#Contacts"><button >Contact Me</button></a>
-			</div>
-		</div>
+		
+		<section id="Home">
+			<div class="home" >
+				<div class="svg-back">
+					<img src="img/svg/back.svg"/>
+				</div>
 
+				<div class="mu-content" >
+					<h1>Hello,</h1>
+					<h2>I'M Mayank Upadhyay</h2>
+					<p id="mu-content" class="typing"></p>
+					<a href="#Contacts"><button >Contact Me</button></a>
+				</div>
+			</div>
+		</section>
+		<section id="mobileHome">
+			<img src="img/background/mobile.png"/>	
+		</section>
 		<!-- about me  -->
-		<div class="about" id="About">
+		<section id="About">
+		<div class="about" >
 			<div class="about-container">
-				<div class="sec1">
-					<img src="img/background/1-01.png"/>
+				<div class="sec1" >
+					<img src="img/background/5.png"/>
 				</div>
 				<div class="sec2">
-					<div class="head">About Me</div>
+					<div class="head" >About Me</div>
 					<div class="line"><img src="img/background/line.png"></div>
 					<div class="sub-head">I Am a Creative Web Designer And Developer</div>
 					<div class="mu-content">I enjoy turning complex problems into simple, 
@@ -53,12 +63,15 @@
 						<br> <br>
 						My goal is to design products and experiences that are meaningful and impactful, and I'm especially interested in utilizing new technologies to improve people's live in innovative ways.
 					</div>
-					<div  class="resume"><a href="#Contacts"><button>Resume</button></a></div>
+					<div  class="resume" id="qwe"><a href=""><button>Resume</button></a></div>
 				</div>
 			</div>
 		</div>
+		</section>
+
 
 		<!-- work -->
+		<section id="Work">
 		<div class="work" id="Work">
 			<div class="work-container">
 				<div class="sec2">
@@ -73,7 +86,7 @@
 					<div  class="resume"><a href="#Contacts"><button>Projects</button></a></div>
 				</div>
 				<div class="sec1">
-					<!-- <img src="img/background/1-01.png"/> -->
+					<img class="bag" src="img/background/6.png"/>
 					<div class="main-img">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							 viewBox="0 0 600 442" style="enable-background:new 0 0 600 442;" xml:space="preserve">
@@ -2160,18 +2173,15 @@
 				</div>
 			</div>
 		</div>
-
+		</section>
 
 		<!-- sills -->
-		<div class="about" id="Skills">
+		<section id="Skills">
+		<div class="about">
 			<div class="about-container">
 				<div class="sec1" class="demo-1">
 					<main>
-			<div class="content content--fixed">
-					<nav class="bike-nav">
-					<span class="bike-nav__item bike-nav__item--current"><span class="bike-nav__title"></span><svg class="icon icon--bike"><use xlink:href="#icon-bike"></use></svg></span> 
-				</nav>
-			</div>
+			
 			<div class="content">
 				<svg id="bike" class="bike-1" viewBox="0 0 590.6 541.8">
 					<g id="mainpaths">
@@ -2591,42 +2601,30 @@
 					            CSS3 & SCSS
 					          </span>
 					        </li>
-					        <li class="chart-bar" style="width: 70%;">
+					        <li class="chart-bar" style="width: 60%;">
 					          <span class="chart-label">
 					            JavaScript
 					          </span>
 					        </li>
-					        <li class="chart-bar" style="width: 40%;">
-					          <span class="chart-label">
-					            AngularJS
-					          </span>
-					        </li>
-					        <li class="chart-bar" style="width: 40%;">
-					          <span class="chart-label">
-					            ReactJS
-					          </span>
-					        </li>
+					       
 					        <li class="chart-bar" style="width: 60%;">
 					          <span class="chart-label">
 					            jQuery
 					          </span>
 					        </li>
-					        <li class="chart-bar" style="width: 55%;">
-					          <span class="chart-label">
-					            NodeJS
-					          </span>
+					  
 					        </li>
-					        <li class="chart-bar" style="width: 40%;">
+					        <li class="chart-bar" style="width: 90%;">
 					          <span class="chart-label">
 					            Ai
 					          </span>
 					        </li>
-					        <li class="chart-bar" style="width: 60%;">
+					        <li class="chart-bar" style="width: 40%;">
 					          <span class="chart-label">
 					            Ps
 					          </span>
 					        </li>
-					        <li class="chart-bar" style="width: 60%;">
+					        <li class="chart-bar" style="width: 50%;">
 					          <span class="chart-label">
 					            Xd
 					          </span>
@@ -2640,71 +2638,62 @@
 				</div>
 			</div>
 		</div>
-
+		</section>
 	<!-- Gallery-->
-
-		<div class="gallery" id="Gallery">
+		<section id="Gallery">
+		<div class="gallery">
 			<div class="head">Gallery</div>
 			<div class="line"><img  src="img/background/line.svg"></div>
-			<div class="main-cards">
-				<div class="cards-1">
-					<div class="sub1">
-						<!-- <img src="img/gallery/9.jpg"> -->
-					</div>
-					<div class="sub2">
-						<!-- <img src="img/gallery/6.jpg"> -->
-					</div>
-					<div class="sub3">
-						<!-- <img src="img/gallery/11.jpg"> -->
-					</div>
-					<div class="sub4">
-						<!-- <img src="img/gallery/8.jpg"> -->
-					</div>				
+				<div class="card" id="Friends">
+					<div class="img1"><img src="img/gallery/ps/1-01.jpg"></div>
+					<div class="img2"><img src="img/gallery/ps/1-02.jpg"></div>
+					<div class="img3"><img src="img/gallery/ps/1-03.jpg"></div>
+					<div class="img4"><img src="img/gallery/ps/1-04.jpg"></div>
+					<div class="img5"><img src="img/gallery/ps/2-02.jpg"></div>
+					<div class="img6"><img src="img/gallery/ps/2-03.jpg"></div>
+					<div class="img7"><img src="img/gallery/ps/2-01.jpg"></div>
+					<div class="img8"><img src="img/gallery/ps/2-04.jpg"></div>
+					<div class="img9"><img src="img/gallery/ps/3-02.jpg"></div>
+					<div class="img10"><img src="img/gallery/ps/3-03.jpg"></div>
+					<div class="img11"><img src="img/gallery/ps/3-04.jpg"></div>
 				</div>
-
-				<div class="cards-2">
-					<div class="sub1">
-						<!-- <img src="img/gallery/9.jpg"> -->
-					</div>
-					<div class="sub2">
-						<!-- <img src="img/gallery/9.jpg"> -->
-					</div>
-					<div class="sub3">
-						<!-- <img src="img/gallery/9.jpg"> -->
-					</div>
-					<div class="sub4">
-						<!-- <img src="img/gallery/9.jpg"> -->
-					</div>				
-				</div>
-
-				<div class="cards-3">
-					<div class="sub1">
-						<!-- <img src="img/gallery/9.jpg"> -->
-					</div>
-					<div class="sub2">
-						<!-- <img src="img/gallery/9.jpg"> -->
-					</div>
-					<div class="sub3">
-						<!-- <img src="img/gallery/9.jpg"> -->
-					</div>				
-				</div>
-			</div>
-			<div class="loadMore"><a href=""><button>Load More</button></a></div>
+			<div class="loadMore"><a href="gallery_page.html"><button>Load More</button></a></div>
 		</div>
+		</section>
 
+
+		<!-- work -->
+		<div class="myWorks">
+			<div>
+				<i class="fa fa-clock-o"></i>
+				<div class="counter">24,753</div>
+				<div>Hours Worked</div>
+			</div>
+			<div>
+				<i class="fa fa-code"></i>
+				<div class="counter">9,86,247</div>
+				<div>Lines of Code</div>
+			</div>
+			<div>
+				<i class="fa fa-user"></i>
+				<div class="counter">69</div>
+				<div>Happy Customers</div>
+			</div>
+		</div>
 	<!-- hire me -->
 
-		<div class="hireMe">
+		<!-- <div class="hireMe">
 			<div >
 				<div class="head"> Hire Me For Your Awesome Projects</div>
 				<div class="sub-head">"&nbsp;Do not hire a man who does your work for money, but him who does it for the love of it.&nbsp;"</div>
 				<div class="author">- Henry David Thoreau</div>
 			</div>
 			<div><a href="#"><button> Hire Me</button></a></div>
-		</div>
+		</div> -->
 
 	<!-- contact form -->
-	<div class="contact" id="Contacts">
+	<section id="Contacts">
+	<div class="contact" >
 		<div class="info">
 			<div class="head">Contact Info.</div>
 			<div class="subb1">
@@ -2726,28 +2715,29 @@
 				<br>mayankupadhyay398@gmail.com</div>
 			</div>	
 		</div>
-		<div class="message">
-			<div class="head"> Send Your Message
-				<div class="image"><img src="img/logo/line.svg"></div>
+		<form id="contactForm" class="message" action="https://formspree.io/mayankupadhyay398@gmail.com" method="POST">
+			<div class="head">Send Your Message
+			<div class="image"><img src="img/logo/line.svg"></div>
 			</div>
 			
-			<div class="input1"><input type="text" name="Name" placeholder="Name"/></div>
-			<div class="input2"><input type="text" name="Phone No" placeholder="Phone No"/></div>
-			<div class="input3"><textarea name="Message" placeholder="Message"></textarea></div>
-			<div class="input4"><a href="#"><button>Submit</button></a></div>
-		</div>
-	</div>
+			<div class="input1"><input id="name" type="text" name="Name" placeholder="Name"/></div>
+			<div class="input2"><input id="email" type="email" name="Email" placeholder="Email"/></div>
+			<div class="input3"><textarea id="message" name="Message" placeholder="Message"></textarea></div>
+			<div class="input4"><a href="#"><button type="submit" class="SubmitForm">Submit</button></a></div>
+		</form>
 		
+	</div>
+	</section>
 	<!--Footer  -->
 	<footer>
 			<ul>
-				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-				<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-				<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-				<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-				<li><a href="#"><i class="fa fa-steam" aria-hidden="true"></i></a></li>
-				<li><a href="#"><i class="fa fa-angellist" aria-hidden="true"></i></a></li>
+				<li><a href="https://www.facebook.com/mnuqwe"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="https://twitter.com/MayankU16653858"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/mayank-upadhyay-967ba112a"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+				<li><a href="https://www.instagram.com/mnuqwe/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				<li><a href="https://aboutme.google.com/u/0/?referer=gplus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+				<li><a href="https://steamcommunity.com/id/mnuqwe/"><i class="fa fa-steam" aria-hidden="true"></i></a></li>
+				<li><a href="https://angel.co/mayank-upadhyay-7"><i class="fa fa-angellist" aria-hidden="true"></i></a></li>
 			</ul>
 	</footer>
 	
@@ -2758,9 +2748,22 @@
 	</div>
 
 
+
+	
+	<script src="js/typed.min.js"></script>
+	<!-- <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+	<script src="js/main-contact.js"></script> -->
 	<script src="js/TweenMax.min.js"></script>
 	<script src="js/DrawSVGPlugin.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script> -->
 	<script src="js/demo1.js"></script>
+	<script src="js/jquery.counterup.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+	<script src="js/main.js"></script>
+	
 
 </body>
 </html>

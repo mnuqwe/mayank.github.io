@@ -1,0 +1,103 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+.gallery{
+	width: 100%;
+	text-align: center;
+
+}
+#Designs , #Photos{
+	display: none;
+}
+.head{
+	/*border: 2px solid orange;*/
+	
+	margin-top: 30px;
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: -6px;
+}
+
+.nav{
+	/*width: 100%;
+	border: 2px solid pink;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	padding-left: 40%;
+	padding-right: 40%;
+	margin-top: 10px;*/
+	 display: flex;
+ 	justify-content: center;
+}
+.nav > option{
+	margin: 5px;
+	margin-top: 15px;
+	font-size: 14px;
+	font-weight: 500px;
+	cursor: pointer;
+}
+.card{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-gap: 5px;
+	justify-content: center; 
+	width: 750px;
+	margin: 15px auto;
+	grid-template-areas: 
+	'img1 img1 img2 img3'
+	'img1 img1 img4 img4'
+	'img5 img6 img7 img7'
+	'img8 img8 img7 img7'
+	'img9 img10 img11 img11'
+
+}
+.card > div{
+	border: 2px solid green;
+	width: 100%; 
+	min-height: 180px;	
+}
+.card .img1{
+	grid-area: img1;
+}
+.card .img2{
+	grid-area: img2;
+}
+.card .img3{
+	grid-area: img3;
+}
+.card .img4{
+	grid-area: img4;
+}
+.card .img5{
+	grid-area: img5;
+}
+.card .img6{
+	grid-area: img6;
+}
+.card .img7{
+	grid-area: img7;
+}
+.card .img8{
+	grid-area: img8;
+}
+.card .img9{
+	grid-area: img9;
+}
+.card .img10{
+	grid-area: img10;
+}
+.card .img11{
+	grid-area: img11;
+}
+.card img{
+	width: 100%;
+	height: 180px;
+	object-fit: cover;
+}
+
+.img-line{
+	width: 100px;
+	/*border: 2px solid pink;*/
+}
