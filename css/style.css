@@ -731,7 +731,7 @@ ul li:nth-child(7) a:hover	.fa{
 	}
 	#mobileHome img{
 		width: 60%;
-		display: none;	
+		display: block;	
 		margin: auto;
 		margin-top:0;
 	}
