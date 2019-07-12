@@ -726,11 +726,10 @@ ul li:nth-child(7) a:hover	.fa{
 		display: block;	
 		width: 100%;
 		overflow: 	hidden;	
-		margin-bottom: 	20%;
 		height: 100vh;
 	}
 	#mobileHome img{
-		width: 60%;
+		width: 80%;
 		display: block;	
 		margin: auto;
 		margin-top:0;
@@ -841,14 +840,23 @@ ul li:nth-child(7) a:hover	.fa{
 		position: relative;	
 		top: -150px;
 		height: 500px;
+		
 	}
 	#Skills .sec1 svg{
 		width: 	70%;
+		
+	}
+	#Skills .sec2{
+		top: -150px;
+		
+		position: relative;
+		margin-bottom: -150px;
 	}
 	.skills{
 		height: auto;
 		display: inline-block;	
 		text-align: center;	
+
 	}
 	.skills ul{
 		text-align: center;	
@@ -877,25 +885,42 @@ ul li:nth-child(7) a:hover	.fa{
 		margin-top: 10px;
 	}
 	.card{
-	display: grid;
-	grid-template-columns: repeat(2,1fr);
-	grid-gap: 2px;
-	justify-content: center; 
-	width: 100%;
-	margin: 15px auto;
-	grid-template-areas: 
-	'img1 img1'
-	'img1 img1'
-	'img4 img4'
-	'img2 img3'
-	'img5 img6'
-	'img8 img8'
-	'img7 img7'
-	'img7 img7'
-	'img9 img10'
-	'img11 img11'
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		grid-gap: 2px;
+		justify-content: center; 
+		width: 100%;
+		margin: 15px auto;
+		grid-template-areas: 
+		'img1 img1'
+		'img1 img1'
+		'img4 img4'
+		'img2 img3'
+		'img5 img6'
+		'img8 img8'
+		'img7 img7'
+		'img7 img7'
+		'img9 img10'
+		'img11 img11'
 	}
 	
+	.myWorks{	
+		margin-top: 5%;
+		display: flex;
+		padding: 3% 2%;  
+	}	
+	.myWorks >div{
+		font-size: 10px;
+		grid-gap: 5%;
+
+	}
+	.myWorks i {
+		font-size: 	25px;
+	}
+	.myWorks .counter{
+		font-size: 30px;
+	}
+
 	.hireMe{
 		display: none;
 	}
@@ -974,5 +999,21 @@ ul li:nth-child(7) a:hover	.fa{
 	}
 	.myWorks{
 		padding: 40px 35px;
+	}
+}
+@media only screen and (width: 768px){
+	
+	#Skills .sec1{
+		position: relative;	
+		top: -150px;
+		height: 500px;
+	}
+	#Skills .sec1 svg{
+		width: 	70%;
+	}
+	#Skills .sec2{
+		top: 10px;
+		position: relative;
+		margin-bottom:10px;
 	}
 }
